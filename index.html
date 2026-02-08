@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Affiliate Seite – Produkt-Empfehlung</title>
+    <meta
+      name="description"
+      content="Entdecke eine kompakte Affiliate-Produktvorstellung mit klaren Vorteilen, FAQs und direktem Zugang zum Angebot."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f8fb;
+        --card: #ffffff;
+        --text: #1a1a1a;
+        --muted: #5f6b7a;
+        --accent: #2a6df4;
+        --accent-dark: #1f55c7;
+        --border: #e4e8f0;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      header {
+        padding: 48px 16px 32px;
+        text-align: center;
+        background: linear-gradient(135deg, #e8efff, #f8fbff);
+        border-bottom: 1px solid var(--border);
+      }
+
+      header p {
+        max-width: 680px;
+        margin: 12px auto 0;
+        color: var(--muted);
+      }
+
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 32px 16px 80px;
+        display: grid;
+        gap: 24px;
+      }
+
+      .card {
+        background: var(--card);
+        border-radius: 16px;
+        border: 1px solid var(--border);
+        padding: 24px;
+        box-shadow: 0 8px 24px rgba(26, 34, 66, 0.06);
+      }
+
+      .hero {
+        display: grid;
+        gap: 20px;
+      }
+
+      .hero h1 {
+        font-size: clamp(2rem, 3vw, 2.6rem);
+      }
+
+      .hero .highlight {
+        color: var(--accent);
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: #eef4ff;
+        color: var(--accent-dark);
+        font-size: 0.85rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 24px;
+        border-radius: 999px;
+        border: none;
+        background: var(--accent);
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+        box-shadow: 0 12px 24px rgba(42, 109, 244, 0.25);
+        max-width: 320px;
+      }
+
+      .cta:hover,
+      .cta:focus-visible {
+        background: var(--accent-dark);
+        transform: translateY(-2px);
+      }
+
+      .features {
+        display: grid;
+        gap: 12px;
+        margin-top: 12px;
+      }
+
+      .features li {
+        list-style: none;
+        padding-left: 28px;
+        position: relative;
+        color: var(--muted);
+      }
+
+      .features li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      .grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+
+      .faq details {
+        padding: 16px 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .faq summary {
+        cursor: pointer;
+        font-weight: 600;
+      }
+
+      footer {
+        text-align: center;
+        padding: 32px 16px 48px;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .disclaimer {
+        font-size: 0.85rem;
+        color: var(--muted);
+        margin-top: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="badge">Affiliate Empfehlung</div>
+      <h1>Dein nächster Schritt zu mehr Erfolg mit dem passenden Produkt</h1>
+      <p>
+        Diese Seite stellt dir ein ausgewähltes Produkt vor, das dir schnell und
+        strukturiert weiterhelfen kann. Informiere dich in Ruhe und entscheide,
+        ob das Angebot zu dir passt.
+      </p>
+    </header>
+
+    <main>
+      <section class="card hero">
+        <div>
+          <h1>
+            Produkt-Highlight: <span class="highlight">Jetzt entdecken</span>
+          </h1>
+          <p>
+            Du möchtest eine klare, erprobte Lösung, die dich Schritt für Schritt
+            begleitet? Dieses Angebot liefert praxisnahe Inhalte, die leicht
+            umzusetzen sind und dir einen konkreten Fahrplan an die Hand geben.
+          </p>
+          <ul class="features">
+            <li>Strukturiertes Konzept für schnelle Umsetzung</li>
+            <li>Komprimierte Inhalte ohne unnötigen Ballast</li>
+            <li>Ideal für einen fokussierten Start oder Ausbau</li>
+          </ul>
+        </div>
+        <a
+          class="cta"
+          href="https://www.digistore24.com/redir/377032/LianNachtwind/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Angebot ansehen
+        </a>
+        <p class="disclaimer">
+          Hinweis: Bei einem Kauf über den Link erhalte ich eine kleine Provision,
+          ohne dass dir zusätzliche Kosten entstehen.
+        </p>
+      </section>
+
+      <section class="grid">
+        <div class="card">
+          <h2>Für wen eignet sich das Angebot?</h2>
+          <p>
+            Ideal für Menschen, die eine klare Orientierung suchen und lieber
+            einem bewährten Plan folgen, statt sich durch unzählige Quellen zu
+            kämpfen.
+          </p>
+        </div>
+        <div class="card">
+          <h2>Deine Vorteile auf einen Blick</h2>
+          <p>
+            Du bekommst eine kompakte Zusammenstellung der wichtigsten Schritte,
+            die du sofort nutzen kannst, um messbare Fortschritte zu erzielen.
+          </p>
+        </div>
+        <div class="card">
+          <h2>Was du erwarten kannst</h2>
+          <p>
+            Das Produkt fokussiert sich auf Praxis, Klarheit und direkte
+            Umsetzbarkeit, damit du mit Struktur vorankommst.
+          </p>
+        </div>
+      </section>
+
+      <section class="card faq">
+        <h2>Häufige Fragen</h2>
+        <details>
+          <summary>Wie geht es nach dem Klick weiter?</summary>
+          <p>
+            Du wirst direkt zur Angebotsseite weitergeleitet und kannst dort alle
+            Details sowie Preise einsehen.
+          </p>
+        </details>
+        <details>
+          <summary>Entstehen mir zusätzliche Kosten?</summary>
+          <p>
+            Nein. Der Preis bleibt für dich gleich. Ich erhalte lediglich eine
+            Provision, falls du dich für einen Kauf entscheidest.
+          </p>
+        </details>
+        <details>
+          <summary>Ist das Angebot zeitlich begrenzt?</summary>
+          <p>
+            Informationen zu eventuellen Aktionen oder Rabatten findest du auf
+            der Angebotsseite selbst.
+          </p>
+        </details>
+      </section>
+    </main>
+
+    <footer>
+      © 2025 Affiliate Empfehlung · Transparent & ehrlich
+    </footer>
+  </body>
+</html>
